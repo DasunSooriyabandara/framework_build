@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BVT Test Suite">
+  <test thread-count="5" name="BVT Test">
+    <classes>
+      <class name="testcases.MyFirstTest">&lt;nnanamnamename name =name = name = &quot;name = &quot;&quot;name = &quot;b&quot;name = &quot;ba&quot;name = &quot;bas&quot;name = &quot;base&quot;name = &quot;base.&quot;name = &quot;base.B&quot;name = &quot;base.Ba&quot;name = &quot;base.Bas&quot;name = &quot;base.Base&quot;name = &quot;base.BaseT&quot;name = &quot;base.BaseTe&quot;name = &quot;base.BaseTes&quot;name = &quot;base.BaseTest&quot;name = &quot;base.BaseTest&quot;</class>
+      <class name="base.BaseTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!---->
