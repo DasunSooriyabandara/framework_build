@@ -17,6 +17,9 @@ public class ReadpropertyFile {
 		
 		System.out.println(propert.getProperty("browser", null));
 		System.out.println(propert.getProperty("testurl"));
+		System.out.println(propert.getProperty("signin_link"));
+		System.out.println(propert.getProperty("email_field"));
+		
 	}
 
 }
