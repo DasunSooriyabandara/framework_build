@@ -9,11 +9,16 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import base.BaseTest;
+import utilities.readXLSdata;
 
 public class MyFirstTest extends BaseTest {
+	
 
-    @Test(dataProvider = "LoginDataProvider")
+    @Test(dataProviderClass = readXLSdata.class,dataProvider = "LoginDataProvider"  )
+    
     public void LoginTest(String username, String password) {
+    	//-------------------ethod Name and sheet name of the excel file should be same---------------
+    	
         try {
             System.out.println("Title of the page is: " + getDriver().getTitle());
 
@@ -52,15 +57,15 @@ public class MyFirstTest extends BaseTest {
         }
     }
 
-    @DataProvider(name = "LoginDataProvider")
-    public Object[][] LoginData() {
-        return new Object[][] {
-        	
-        	{ "dasunsooriyabandara@gmail.com", "Test@2024" },
-            { "dfsdfsdf@gmail.com", "fafafafafas" },
-            { "dfafsfasfaffs@gmail.com", "fafafafafas" },
-            { "dasunsooriyabandara@gmail.com", "fafafafafas" },
-            
-        };
-    }
+//    @DataProvider(name = "LoginDataProvider")
+//    public Object[][] LoginData() {
+//        return new Object[][] {
+//        	
+//        	{ "dasunsooriyabandara@gmail.com", "Test@2024" },
+//            { "dfsdfsdf@gmail.com", "fafafafafas" },
+//            { "dfafsfasfaffs@gmail.com", "fafafafafas" },
+//            { "dasunsooriyabandara@gmail.com", "fafafafafas" },
+//            
+//        };
+//    }
 }
